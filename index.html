@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My days</title>
     <link rel="stylesheet" href="style.css">
-    <title>Diary App</title>
 </head>
 
 <body>
+    <h2 class="clock">00:00:00</h2>
     <form class="hidden login_form">
-        <input required maxlength="15" type="text" placeholder="What is your name?" />
-        <input type="submit" value="Log In">
+        <span class="login">
+            What is you name?
+        </span>
+        <input class="login_name" required maxlength="15" type="text">
+        <input class="login_btn" type="submit" value="Log In">
     </form>
-    <h2 id="clock">00:00:00</h2>
     <h1 class="hidden" id="greeting"></h1>
     <form id="todo_form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
+        <span class="todo_txt">
+            Write a to do and Press
+        </span>
+        <input class="input_txt" type="text" required>
     </form>
+    <span class="todo_tit">Todo</span>
     <ul id="todo_list"></ul>
     <div id="quote">
         <span></span>
@@ -29,7 +36,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
-
 </body>
 
 </html>
